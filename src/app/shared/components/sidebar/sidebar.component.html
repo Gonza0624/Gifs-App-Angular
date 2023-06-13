@@ -1,0 +1,42 @@
+<div class=" bg-dark border-right p-3" id="sidebar" [style.height]="sidebarHeight">
+  <h3 class="text-light">Gifs App</h3>
+  <hr class="text-white" />
+
+  <div class="list-group list-reset">
+    <button (click)="searchTag(tag)" *ngFor="let tag of tags" class="list-group-item list-group-item-action mb-3">
+      {{ tag | titlecase }}
+    </button>
+  </div>
+</div>
+
+
+
+<!--
+<div
+  class="container-fluid bg-dark border-right p-3"
+  id="sidebar"
+  [style.height]="sidebarHeight"
+>
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+      <div
+        class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+        >
+          <span class="fs-5 d-none d-sm-inline">Menu</span>
+        </a>
+        <button
+          (click)="searchTag(tag)"
+          *ngFor="let tag of tags"
+          class="list-group-item list-group-item-action mb-3"
+        >
+          {{ tag | titlecase }}
+        </button>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div> -->
